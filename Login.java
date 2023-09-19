@@ -16,7 +16,20 @@ public class Login {
         if(firstName.isEmpty() || lastName.isEmpty()){
             System.out.println("Error! First and/or last name is missing");
         } else{
-            
+           
         }
+
+        scan.close();
     }
+
+    public static String GenerateEmail(String firstName, String lastName, String domain){
+        String email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + domain.toLowerCase();
+        return email;
+    }
+
+    public static String GenerateUsername(String firstName, String lastName){
+        String username = firstName.substring(0, 4).toLowerCase() + lastName.substring(0, 4).toLowerCase();
+        return username; 
+    }
+
 }
