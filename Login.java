@@ -4,13 +4,13 @@ public class Login {
     public static void main(String[] Args){
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter your first name?");
+        System.out.println("Enter your first name:");
         String firstName = scan.nextLine();
 
-        System.out.println("Enter your last name?");
+        System.out.println("Enter your last name:");
         String lastName = scan.nextLine();
 
-        System.out.println("Enter your business domain?");
+        System.out.println("Enter your business domain:");
         String domain = scan.nextLine();
 
         if(firstName.isEmpty() || lastName.isEmpty()){
@@ -22,7 +22,6 @@ public class Login {
            System.out.println("Genarated Email: " + email);
            System.out.println("Genarated Username: " + username);
         }
-
         scan.close();
     }
 
